@@ -370,6 +370,10 @@ footer {
         overflow-x: scroll;
     }
 
+    footer {
+        overflow-x: hidden;
+    }
+
     .footer-content {
         flex-direction: column;
         justify-content: center;
