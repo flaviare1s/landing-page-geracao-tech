@@ -13,6 +13,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 a {
     text-decoration: none;
 }
@@ -28,9 +32,9 @@ body {
 
 .header {
     background-color: var(--cor-primaria);
-    padding: 20px;
+    padding: 15px 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -174,6 +178,22 @@ h1 {
     width: 100%;
 }
 
+#conteudo {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 80%;
+    color: var(--cor-primaria);
+}
+
+#conteudo h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
 @media (max-width: 768px) {
     .header {
         flex-direction: column;
@@ -196,7 +216,6 @@ h1 {
 
     #sobre h2 {
         font-size: 2rem;
-        margin-bottom: 2rem;
     }
 
     .sobre-container {
@@ -218,4 +237,9 @@ h1 {
     .img-sobre {
         width: 100%;
     }
+
+    #conteudo h2 {
+        font-size: 2rem;
+    }
+    
 }
