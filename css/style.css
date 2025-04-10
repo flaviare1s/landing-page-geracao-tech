@@ -256,6 +256,42 @@ h1 {
     width: 40%;
 }
 
+footer {
+    background-color: var(--cor-primaria);
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content {
+    display: flex;
+}
+
+.lang {
+    display: flex;
+    color: white;
+    gap: 20px;
+    padding: 20px;
+}
+
+.lang p {
+    padding-bottom: 20px;
+}
+
+.footer-paragrafo {
+    padding: 20px;
+}
+
 @media (max-width: 768px) {
     .header {
         flex-direction: column;
@@ -326,5 +362,15 @@ h1 {
 
     .aulas-container p {
         width: 100%;
-    }    
+    }
+    
+    .mapa {
+        overflow-x: scroll;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
