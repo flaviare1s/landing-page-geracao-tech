@@ -117,7 +117,12 @@ h1 {
     transition: all 0.3s ease;
 }
 
-#sobre {
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.section {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -125,12 +130,12 @@ h1 {
     margin: auto;
     width: 80%;
     color: var(--cor-primaria);
-    min-height: 100vh;
+    margin-top: 20px;
+    min-height: 80vh;
 }
 
-#sobre h2 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
+#sobre {
+    margin-top: 50px;
 }
 
 .sobre-container {
@@ -178,20 +183,61 @@ h1 {
     width: 100%;
 }
 
-#conteudo {
-    min-height: 80vh;
+.conteudo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+}
+
+.conteudo-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    margin: auto;
-    width: 80%;
-    color: var(--cor-primaria);
+    width: 50%;
+    height: 150px;
+    background-color: white;
+    box-shadow: var(--sombra);
+    border-radius: 10px;
+    padding: 20px;
 }
 
-#conteudo h2 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
+.conteudo-content h3 {
+    font-size: 1.7rem;
+    margin-bottom: 1.5rem;
+}
+
+.galeria-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+}
+
+.galeria-img-container {
+    width: 250px;
+    height: 250px;
+}
+
+.galeria-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.aulas-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+}
+
+.aulas-container p {
+    width: 40%;
 }
 
 @media (max-width: 768px) {
@@ -209,13 +255,17 @@ h1 {
         font-size: 2rem;
     }
 
-    #sobre {
+    .section {
         padding: 20px;
         width: 100%;
     }
 
-    #sobre h2 {
+    .section-title {
         font-size: 2rem;
+    }
+
+    #sobre {
+        margin-top: 30px;
     }
 
     .sobre-container {
@@ -238,8 +288,27 @@ h1 {
         width: 100%;
     }
 
-    #conteudo h2 {
-        font-size: 2rem;
+    .conteudo-container {
+        flex-direction: column;
     }
-    
+
+    .conteudo-content {
+        width: 100%;
+    }
+
+    .conteudo-content h3 {
+        font-size: 1.5rem;
+    }
+
+    .galeria-container {
+        flex-direction: column;
+    }
+
+    .aulas-container {
+        flex-direction: column;
+    }
+
+    .aulas-container p {
+        width: 100%;
+    }    
 }
