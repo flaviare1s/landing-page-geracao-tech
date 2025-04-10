@@ -310,10 +310,12 @@ footer {
     .section {
         padding: 20px;
         width: 100%;
+        margin-top: 10px;
     }
 
     .section-title {
         font-size: 2rem;
+        margin-bottom: 1rem;
     }
 
     #sobre {
