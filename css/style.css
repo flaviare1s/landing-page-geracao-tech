@@ -11,7 +11,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    list-style: none;
+}
+
+a {
     text-decoration: none;
 }
 
@@ -21,6 +23,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    overflow-x: hidden;
 }
 
 .header {
@@ -42,14 +45,177 @@ body {
 .nav {
     display: flex;
     gap: 20px;
+    list-style: none;
 }
 
 a {
     color: var(--cor-clara);
 }
 
+.banner {
+    position: relative;
+    height: 90vh;
+    overflow: hidden;
+}
+
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.605);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.banner-content {
+    position: absolute;
+    top: 50%;
+    transform: translateX(50%);
+}
+
+h1 {
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.banner p {
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+}
+
+.banner .button {
+    background-color: var(--cor-primaria);
+    border: none;
+    color: white;
+    padding: 0.8rem 2rem;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+#sobre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 80%;
+    color: var(--cor-primaria);
+    min-height: 100vh;
+}
+
+#sobre h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.sobre-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.sobre-content {
+    width: 50%;
+}
+
+.sobre-content h3 {
+    font-size: 1.7rem;
+    margin-bottom: 1.5rem;
+}
+
+.sobre-content p {
+    line-height: 25px;
+    margin-bottom: 1.5rem;
+}
+
+.sobre-content ul {
+    list-style-position: inside;
+}
+
+.sobre-content li {
+    padding: 8px 0;
+}
+
+.sobre-content ul li::marker {
+    color: red;
+    font-size: 12px;
+}
+
+.img-sobre-container {
+    border-radius: 10px;
+    width: 50%;
+}
+
+.img-sobre {
+    border-radius: 10px;
+    width: 100%;
+}
+
 @media (max-width: 768px) {
     .header {
         flex-direction: column;
+    }
+
+    .banner-content {
+        top: 30%;
+        left: 20px;
+        transform: translateY(0);
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    #sobre {
+        padding: 20px;
+        width: 100%;
+    }
+
+    #sobre h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .sobre-container {
+        flex-direction: column-reverse;
+    }
+
+    .sobre-content {
+        width: 100%;
+    }
+
+    .sobre-content h3 {
+        font-size: 1.5rem;
+    }
+
+    .img-sobre-container {
+        width: 100%;
+    }
+    
+    .img-sobre {
+        width: 100%;
     }
 }
