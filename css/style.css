@@ -310,6 +310,10 @@ footer {
         font-size: 2rem;
     }
 
+    .nav a {
+    font-size: 14px;
+    }
+
     .section {
         padding: 20px;
         width: 100%;
@@ -359,6 +363,11 @@ footer {
 
     .galeria-container {
         flex-direction: column;
+    }
+
+    .galeria-img-container {
+    width: 350px;
+    height: 350px;
     }
 
     .aulas-container {
