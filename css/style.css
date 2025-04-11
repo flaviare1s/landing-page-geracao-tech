@@ -137,7 +137,8 @@ h1 {
 }
 
 .button:hover {
-    opacity: 60%;
+    background-color: var(--cor-secundaria);
+    transform: translateY(-2px);
 }
 
 .section-title {
