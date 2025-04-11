@@ -144,6 +144,7 @@ h1 {
 .section-title {
     font-size: 2.5rem;
     margin-bottom: 2rem;
+    color: var(--cor-texto);
 }
 
 .section {
@@ -177,6 +178,7 @@ h1 {
 .sobre-content h3 {
     font-size: 1.7rem;
     margin-bottom: 1.5rem;
+    color: var(--cor-texto);
 }
 
 .sobre-content p {
@@ -230,6 +232,7 @@ h1 {
 .conteudo-content h3 {
     font-size: 1.7rem;
     margin-bottom: 1.5rem;
+    color: var(--cor-texto);
 }
 
 .galeria-container {
@@ -262,6 +265,7 @@ h1 {
 
 .aulas-container p {
     width: 40%;
+    color: var(--cor-texto);
 }
 
 footer {
