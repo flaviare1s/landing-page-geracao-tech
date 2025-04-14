@@ -247,6 +247,8 @@ h1 {
 .galeria-img-container {
     width: 250px;
     height: 250px;
+    border-radius: 10px;
+    box-shadow: var(--sombra);
 }
 
 .galeria-img {
